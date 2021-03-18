@@ -57,7 +57,7 @@ function App() {
 function Home() {
   return (
     <div className="applications">
-      <div className="applications-title">Приложения</div>
+      <div className="applications-title">Applications</div>
       <div className="applications-title-item">
         <Link
           className="applications-title-item-type applications-title-item-type__counter"
