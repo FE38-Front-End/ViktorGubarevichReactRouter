@@ -1,0 +1,112 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    background-size: cover;
+    background-color: black;
+
+    &-link {
+        color: white;
+
+        &-svg:hover {
+            transform: scale(1.5);
+
+            path {
+                fill: orange;
+            }
+        }
+
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            display: inline;
+            margin-right: 30px;
+            text-decoration: none;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 23px;
+            line-height: 60px;
+            color: #f7f7f7;
+            outline: none;
+            background: none;
+
+            :hover {
+                text-decoration: underline;
+                color: orange;
+                transition-property: all;
+                transition-duration: 0.5s;
+                transition-delay: 0s;
+                transition-timing-function: linear;
+            }
+
+            :focus {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
+
+.applications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 86.5vh;
+    background: orange;
+
+    &-title {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 72px;
+        letter-spacing: 2px;
+        color: black;
+
+        &-item {
+            display: flex;
+            padding-top: 30px;
+
+
+            &-type {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 48px;
+                line-height: 72px;
+                letter-spacing: 2px;
+                color: white;
+
+                &__counter {
+                    margin-right: 50px;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    color: black;
+                    transition-property: all;
+                    transition-duration: 0.5s;
+                    transition-delay: 0s;
+                    transition-timing-function: linear;
+                }
+
+                &:focus {
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+
+            }
+        }
+    }
+}
