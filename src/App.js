@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Counter from "./components/counter/App";
 import Converter from "./components/converter/Converter";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -51,28 +52,6 @@ function App() {
         </Switch>
       </div>
     </Router>
-  );
-}
-
-function Home() {
-  return (
-    <div className="applications">
-      <div className="applications-title">Applications</div>
-      <div className="applications-title-item">
-        <Link
-          className="applications-title-item-type applications-title-item-type__counter"
-          to="/counter"
-        >
-          Counter
-        </Link>
-        <Link
-          className="applications-title-item-type applications-title-item-type__converter"
-          to="/converter"
-        >
-          Converter
-        </Link>
-      </div>
-    </div>
   );
 }
 
