@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useMouseTracker } from "../../utils/useMouseTracker";
 
-function Home() {
+export default function Home() {
+  const mouseTracker = useMouseTracker();
   return (
     <div className="applications">
       <div className="applications-title">Applications</div>
@@ -19,8 +21,11 @@ function Home() {
           Converter
         </Link>
       </div>
+      <div>
+        <h2>
+          Положение мыши по координатам: X:{mouseTracker.x} Y:{mouseTracker.y}
+        </h2>
+      </div>
     </div>
   );
 }
-
-export default Home;
